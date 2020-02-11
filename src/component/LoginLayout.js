@@ -3,9 +3,9 @@ import {connect} from 'react-redux'
 import { reduxForm, Field } from 'redux-form';
 
 export default function LoginLayout(props) {
-    // const { handleSubmit } = props;
-    const handleSubmit = () => {
-        console.log(this.context.store)
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        console.log('submit clicked',props)
     }
   
     return (

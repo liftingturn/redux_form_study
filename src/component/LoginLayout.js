@@ -80,4 +80,8 @@ export default function LoginLayout(props) {
 
 LoginLayout = reduxForm({  //reduxForm()으로 form component decorate
     form: 'signIn',
-  })(LoginLayout);
+  })(LoginLayout);   
+// 이것은 form 상태에 대한 정보와 form을 전송하는 기능들을 제공하는 props와 함께 컴포넌트를 전달합니다.
+// 각각의 입력 컴포넌트는 Field 컴포넌트의 component prop 내에 위치되어야 합니다.
+// Field 컴포넌트는 value, onChange, onBlur 같은 props를 React.DOM.input component에 전달해서
+// 이 값들을 채우고 변경사항들을 수신합니다.
